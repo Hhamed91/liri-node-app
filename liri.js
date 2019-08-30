@@ -62,6 +62,22 @@ function concert_This(searchValue) {
         searchValue = "Coldpaly";
     }
 
+    var queryUrl = "https://rest.bandsintown.com/artists/" + searchValue + "/events?app_id=codingbootcamp";
+        console.log(queryUrl);
+        console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
+    
+    
+        axios.get(queryUrl).then(function (response) {
+                
+                console.log("Name of the Venue : " + response.data[0].venue.name);
+                console.log("Venue Location : " + response.data[0].venue.city);
+                console.log("Date of Event : " + response.data[0].datetime);
+                console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
+
+                
+            }
+        );  
+
 }
 
 function do_what_it_says() {
