@@ -58,6 +58,9 @@ function movie_This(searchValue) {
 };
 
 function concert_This(searchValue) {
+    if (!searchValue) {
+        searchValue = "Coldpaly";
+    }
 
 }
 
