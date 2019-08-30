@@ -8,7 +8,7 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var searchValue = process.argv[3];
 
-function Spotify_This_Song(searchValue) {
+function spotify_This_Song(searchValue) {
 
     if (searchValue === undefined || null) {
         searchValue = "The sign";
@@ -63,31 +63,47 @@ function concert_This(searchValue) {
     }
 
     var queryUrl = "https://rest.bandsintown.com/artists/" + searchValue + "/events?app_id=codingbootcamp";
-        console.log(queryUrl);
-        console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
-    
-    
-        axios.get(queryUrl).then(function (response) {
-                
-                console.log("Name of the Venue : " + response.data[0].venue.name);
-                console.log("Venue Location : " + response.data[0].venue.city);
-                console.log("Date of Event : " + response.data[0].datetime);
-                console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
+    console.log(queryUrl);
+    console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
 
-                
-            }
-        );  
+
+    axios.get(queryUrl).then(function (response) {
+
+        console.log("Name of the Venue : " + response.data[0].venue.name);
+        console.log("Venue Location : " + response.data[0].venue.city);
+        console.log("Date of Event : " + response.data[0].datetime);
+        console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
+
+
+    }
+    );
 
 }
 
 function do_what_it_says() {
+
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
+            return console.log(error);
+        }
+
+
+
+        var dataArr = data.split(",");
+
+        if (dataArr[0] === "spotify-this-song") {
+            var check = dataArr[1].slice(1, -1);
+            spotify_This_Song(check);
+        }
+
+    })
 
 }
 
 switch (command) {
 
     case "spotify-this-song":
-        Spotify_This_Song(searchValue);
+        spotify_This_Song(searchValue);
         break;
 
     case "movie-this":
