@@ -35,6 +35,8 @@ function Spotify_This_Song (searchValue){
 
 
     function movie_This(searchValue) {
+        var queryUrl = "http://www.omdbapi.com/?t=" + searchValue + "&y=&plot=short&apikey=trilogy";
+        console.log(queryUrl);
 
 
     };
