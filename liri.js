@@ -2,6 +2,7 @@ require("dotenv").config();
 var fs = require("fs");
 var keys = require("./keys.js");
 var axios = require("axios");
+var moment = require("moment");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
 
@@ -72,6 +73,8 @@ function concert_This(searchValue) {
 
         console.log("Name of the Venue : " + response.data[0].venue.name);
         console.log("Venue Location : " + response.data[0].venue.city);
+        var time = response.data[0].datetime;
+        var timeNow = moment(time).format("MM/DD/YYYY");
         console.log("Date of Event : " + response.data[0].datetime);
         console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
 
