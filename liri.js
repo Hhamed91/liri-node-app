@@ -22,12 +22,12 @@ function Spotify_This_Song (searchValue){
                 for (let i = 0; i < data.tracks.items.length && i<5; i++) {
                 
                     }
-            console.log("-------------------------------------------------------------------------------------------")
+            console.log("🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶")
             console.log("Artist(s): " + data.tracks.items[0].artists[0].name);
             console.log("The song's name: " + data.tracks.items[0].name)
             console.log("A preview link of the song from Spotify: " + data.tracks.items[0].href)
             console.log("The album that the song is from: " + data.tracks.items[0].album.name)
-            console.log("-------------------------------------------------------------------------------------------")
+            console.log("🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶🎶")
             }
         
         });
