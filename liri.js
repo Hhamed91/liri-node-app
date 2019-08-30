@@ -8,10 +8,13 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var searchValue = process.argv[3];
 
-function spotifTy_This_Song(searchValue) {
+function spotify_This_Song (searchValue){
 
-
-};
+    if(searchValue===undefined || null){
+    searchValue="The sign";
+    }
+        
+        };
 
 
 function movie_This(searchValue) {
@@ -30,7 +33,7 @@ function do_what_it_says() {
 switch (command) {
 
     case "spotify-this-song":
-        spotifTy_This_Song(searchValue);
+        spotify_This_Song(searchValue);
         break;
 
     case "movie-this":
