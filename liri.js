@@ -13,6 +13,7 @@ function spotify_This_Song(searchValue) {
     if (searchValue === undefined || null) {
         searchValue = "The sign";
     }
+    console.log(searchValue);
     spotify.search({ type: 'track', query: searchValue }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
@@ -88,7 +89,6 @@ function do_what_it_says() {
         }
 
 
-
         var dataArr = data.split(",");
 
         if (dataArr[0] === "spotify-this-song") {
@@ -99,10 +99,11 @@ function do_what_it_says() {
     })
 
 }
-
 switch (command) {
 
-    case "spotify-this-song":
+    
+
+    case "spotify-this-Song":
         spotify_This_Song(searchValue);
         break;
 
@@ -116,5 +117,9 @@ switch (command) {
 
     case "do-what-it-says":
         do_what_it_says();
-        break;
+        break
+
+        default:
+        console.log("default value")
+        break
 }
