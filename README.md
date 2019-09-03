@@ -5,7 +5,7 @@ Liri is a node.js application that can search the Spotify, Open Movie Database, 
 *Installation*
 * [How to Install](#liri-set-up)
 * [Setting up Spotify](#spotify-set-up)
-*[Video recording] (#Video-Demo)
+* [Video recording](#Video-Demo)
 
 *How to Use*
 * [Search Open Movie Database](#search-open-movie-database)
