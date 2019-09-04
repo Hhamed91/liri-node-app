@@ -1,4 +1,5 @@
-# Liri Node App ![Terminal](https://media2.giphy.com/media/4UzW8S83pWoKs/giphy.gif?cid=790b76116ac2045119066847521d16a0bf57a2f71fea05c0&rid=giphy.gif)
+![Terminal](https://media2.giphy.com/media/4UzW8S83pWoKs/giphy.gif?cid=790b76116ac2045119066847521d16a0bf57a2f71fea05c0&rid=giphy.gif)
+# Liri Node App 
 
 Liri is a node.js application that can search the Spotify, Open Movie Database, and the Bands in Town APIs.
 
