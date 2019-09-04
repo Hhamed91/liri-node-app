@@ -45,7 +45,7 @@ node liri movie-this UP
 ```
 
 *Example Response:* 
-![Example of an Open Movie Database response.](https://imgur.com/mmXfC8J)
+![Example of an Open Movie Database response.](https://i.imgur.com/mmXfC8J.png)
 
 ---
 ### Search Spotify
@@ -60,7 +60,7 @@ node liri spotify-this-song it's you
 ```
 
 *Example Response:*
-![Example of a Spotify response.](https://imgur.com/MQKL5Br)
+![Example of a Spotify response.](https://i.imgur.com/MQKL5Br.png)
 
 ---
 ### Search Bands in Town
@@ -85,7 +85,7 @@ node liri concert-this metallica
 node liri do-what-it-says
 ```
 *Example Response:*
-![Example of a Bands in Town response.](https://imgur.com/PX0zk5j)
+![Example of a Bands in Town response.](https://i.imgur.com/PX0zk5j.png)
 ---
 
 
