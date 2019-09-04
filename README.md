@@ -39,26 +39,26 @@ node liri movie-this your movie name
 
 *Example:*
 ```
-node liri movie-this the lion king
+node liri movie-this UP
 ```
 
-*Example Response:*
-![Example of an Open Movie Database response.](images/liri_movie-this.png)
+*Example Response:* 
+![Example of an Open Movie Database response.](https://drive.google.com/file/d/14FtHjyso9ySSfBVr9zzcmqgfDNKB-Xnw/view?usp=sharing)
   
 ---
 ### Search Spotify
 *Command format:*
 ```
-node liri spotify-this-song your movie name
+node liri spotify-this-song your song's name
 ```
 
 *Example:*
 ```
-node liri spotify-this-song it's a man's world
+node liri spotify-this-song it's you
 ```
 
 *Example Response:*
-![Example of a Spotify response.](images/liri_spotify-this.png)
+![Example of a Spotify response.](https://drive.google.com/file/d/1lGeZ5ZYGZwYP_-CIUy7uluaDLl5D-8Lz/view?usp=sharing)
 
 ---
 ### Search Bands in Town
@@ -69,11 +69,11 @@ node liri concert-this artist name
 
 *Example:*
 ```
-node liri concert-this red hot chilit peppers
+node liri concert-this metallica
 ```
 
 *Example Response:*
-![Example of a Bands in Town response.](images/liri_concert-this.png)
+![Example of a Bands in Town response.](https://drive.google.com/file/d/1bw0T8iGZnmuHJcy76h8Ubp8QgZJQuTUY/view?usp=sharing)
 
 ---
 ### Liri Do What I say
@@ -83,7 +83,7 @@ node liri concert-this red hot chilit peppers
 node liri do-what-it-says
 ```
 *Example Response:*
-![Example of a Bands in Town response.](images/liri_concert-this.png)
+![Example of a Bands in Town response.](https://drive.google.com/file/d/1NfEhvRY8ozTdqib0mJ3rxo-sld8NhRiA/view?usp=sharing)
 ---
 
 
