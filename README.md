@@ -30,7 +30,6 @@ To set up spotify, you'll need generate *client id* and *client secret* with Spo
  5. In the liri folder create a file named '.env' and format it like this:  SPOTIFY_ID=Your-ID-Here  SPOTIFY_SECRET=Your-Secret-Here
  6. Save and try 'node liri spotify-this-song bye bye bye'
  
- ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
  
 
 ---
@@ -47,7 +46,8 @@ node liri movie-this UP
 
 *Example Response:* 
 ![Example of an Open Movie Database response.](https://drive.google.com/file/d/14FtHjyso9ySSfBVr9zzcmqgfDNKB-Xnw/view?usp=sharing)
-  
+   ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 ---
 ### Search Spotify
 *Command format:*
@@ -76,7 +76,7 @@ node liri concert-this metallica
 ```
 
 *Example Response:*
-![Example of a Bands in Town response.](https://drive.google.com/file/d/1bw0T8iGZnmuHJcy76h8Ubp8QgZJQuTUY/view?usp=sharing)
+![Example of a Bands in Town response.](https://i.imgur.com/9sPSnrM.png)
 
 ---
 ### Liri Do What I say
