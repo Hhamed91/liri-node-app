@@ -74,8 +74,9 @@ function concert_This(searchValue) {
         console.log("Name of the Venue : " + response.data[0].venue.name);
         console.log("Venue Location : " + response.data[0].venue.city);
         var time = response.data[0].datetime;
+        // var time = (timeAPI) => moment(datetime, 'YYYY-MM-DD[T]HH:mm:ss').format('MM/DD/YYYY');
         var timeNow = moment(time).format("MM/DD/YYYY");
-        console.log("Date of Event : " + response.data[0].datetime);
+        console.log("Date of Event : " + timeNow);
         console.log("✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯✯")
 
 
