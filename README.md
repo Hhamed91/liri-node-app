@@ -29,6 +29,9 @@ To set up spotify, you'll need generate *client id* and *client secret* with Spo
  4. Create a new application, and on the next screen copy the *client id* and *client secret*.
  5. In the liri folder create a file named '.env' and format it like this:  SPOTIFY_ID=Your-ID-Here  SPOTIFY_SECRET=Your-Secret-Here
  6. Save and try 'node liri spotify-this-song bye bye bye'
+ 
+ ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+ 
 
 ---
 ### Search Open Movie Database
